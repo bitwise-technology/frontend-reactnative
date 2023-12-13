@@ -3,8 +3,6 @@
     "name": "project-react-native",
     "slug": "project-react-native",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "assetBundlePatterns": ["**/*"]
   }
 }
