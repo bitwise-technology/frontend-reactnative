@@ -5558,7 +5558,7 @@ react-devtools-core@^4.27.2:
 
 react-hook-form@^7.49.2:
   version "7.49.2"
-  resolved "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.49.2.tgz"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.49.2.tgz#6fb2742e1308020f26cb1915c7012b6c07b11ade"
   integrity sha512-TZcnSc17+LPPVpMRIDNVITY6w20deMdNi6iehTFLV1x8SqThXGwu93HjlUVU09pzFgZH7qZOvLMM7UYf2ShAHA==
 
 "react-is@^16.12.0 || ^17.0.0 || ^18.0.0", react-is@^17.0.1:
@@ -6871,7 +6871,7 @@ yocto-queue@^0.1.0:
 
 yup@^1.3.2:
   version "1.3.2"
-  resolved "https://registry.npmjs.org/yup/-/yup-1.3.2.tgz"
+  resolved "https://registry.yarnpkg.com/yup/-/yup-1.3.2.tgz#afffc458f1513ed386e6aaf4bcaa4e67a9e270dc"
   integrity sha512-6KCM971iQtJ+/KUaHdrhVr2LDkfhBtFPRnsG1P8F4q3uUVQ2RfEM9xekpha9aA4GXWJevjM10eDcPQ1FfWlmaQ==
   dependencies:
     property-expr "^2.0.5"
