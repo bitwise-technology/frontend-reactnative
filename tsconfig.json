@@ -7,7 +7,7 @@
       "services/*": ["src/services/*"],
       "repositories/*": ["src/repositories/*"],
       "providers/*": ["src/providers/*"],
-      "assets": ["assets/*"]
+      "assets/*": ["assets/*"]
     }
   },
   "extends": "expo/tsconfig.base"
