@@ -1,6 +1,7 @@
 # Template React Native
 
-O Template React Native é uma estrutura pré-configurada para iniciar rapidamente projetos React Native. Desenvolvido com uma abordagem dedicada às melhores práticas de engenharia de software, este template oferece uma base sólida para o desenvolvimento de aplicativos móveis eficientes e modernos.
+The React Native Template is a pre-configured structure designed for quickly starting React Native projects. Developed with a dedicated focus on best software engineering practices, this template provides a robust foundation for efficient and modern mobile app development.
+
 
 ### Technologies
 - [React Native ](https://reactnative.dev/docs/getting-started)
@@ -16,10 +17,10 @@ O Template React Native é uma estrutura pré-configurada para iniciar rapidamen
 # Cloning repository
 git clone git@github.com:bitwise-technology/frontend-reactnative.git
 
-# Instale as dependências
+# To install the necessary dependencies, use the following commands:
 yarn or yarn install
 
-# Inicie o aplicativo
+# To launch the application, use the following commands:
 expo start or expo run:android
 ```
 
