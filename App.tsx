@@ -1,4 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
+import LoginForm from 'modules/auth/LoginForm';
 
 import React from 'react';
 
@@ -8,6 +9,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
+      <LoginForm />
       <StatusBar style='auto' />
     </View>
   );
