@@ -9,6 +9,7 @@ The React Native Template is a pre-configured structure designed for quickly sta
 - [Expo (Expo Bearer Workflow)](https://expo.io/)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
+- [React Hook Form](https://react-hook-form.com/get-started)
 
 ### Getting started
 
