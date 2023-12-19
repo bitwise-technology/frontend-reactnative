@@ -3,7 +3,7 @@ import { Keyboard, KeyboardAvoidingView, Platform, Text, TouchableWithoutFeedbac
 import Button from 'shared/components/Button';
 import { Flex, HStack, VStack } from 'react-native-flex-layout';
 import { useForm, Controller } from 'react-hook-form';
-import { InputLogin } from '../components/InputLogin';
+import { Input } from 'shared/components/TextInput';
 
 interface LoginForm {
   email: string;
@@ -39,11 +39,11 @@ const Login: React.FC = () => {
               control={control}
               render={({ field: { onChange, value } }) => (
                 <View>
-                  <InputLogin
+                  <Input
                     keyboardType='email-address'
                     placeholder='E-mail'
                     autoCapitalize='none'
-                    onChangeText={onChange}
+                    onChangeText={(text) => onChange(text.trim())}
                     value={value}
                     aria-label='Campo de e-mail'
                   />
@@ -66,8 +66,8 @@ const Login: React.FC = () => {
               control={control}
               render={({ field: { onChange, value } }) => (
                 <View>
-                  <InputLogin
-                    passwordMode
+                  <Input
+                    secureTextEntry={true}
                     autoCapitalize='none'
                     keyboardType='default'
                     placeholder='Senha'
