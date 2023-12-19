@@ -10,12 +10,12 @@ interface LoginForm {
   password: string;
 }
 
-const Login: React.FC = () => {
+const SignIn: React.FC = () => {
   const {
     control,
     handleSubmit,
-    formState: { errors },
-  } = useForm<LoginForm>();
+    formState: { errors, isValid },
+  } = useForm<LoginForm>({ mode: 'onChange' });
 
   const onSubmit = (data: LoginForm) => {
     console.log('Login pressed with email:', data.email, 'and password:', data.password);
@@ -88,7 +88,7 @@ const Login: React.FC = () => {
           </Flex>
 
           <Flex w={'100%'} p={24}>
-            <Button onPress={handleSubmit(onSubmit)} title='Login' variant='contained' />
+            <Button onPress={handleSubmit(onSubmit)} title='Login' variant='contained' disabled={!isValid} />
           </Flex>
         </VStack>
       </KeyboardAvoidingView>
@@ -96,4 +96,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default SignIn;

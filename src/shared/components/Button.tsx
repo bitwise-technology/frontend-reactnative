@@ -20,7 +20,6 @@ export const Button: React.FC<ButtonProps> = ({
   disabled = false,
 }) => {
   const getButtonStyles = (): ViewStyle => {
-
     switch (variant) {
       case 'outlined':
         return {
@@ -46,17 +45,17 @@ export const Button: React.FC<ButtonProps> = ({
     switch (variant) {
       case 'outlined':
         return {
-          color: disabled ? '#ccc' : '#770606',
+          color: disabled ? '#000' : '#770606',
           borderRadius: 8,
         };
       case 'contained':
         return {
-          color: disabled ? '#ccc' : '#ffffff',
+          color: disabled ? '#000' : '#ffffff',
           borderRadius: 8,
         };
       default:
         return {
-          color: disabled ? '#ccc' : '#fff',
+          color: disabled ? '#000' : '#fff',
           borderRadius: 8,
         };
     }

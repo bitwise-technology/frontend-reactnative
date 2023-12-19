@@ -1,15 +1,15 @@
 // LoginStack.tsx
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Login from 'modules/auth/screen/Login';
 import { NavigationContainer } from '@react-navigation/native';
+import SignIn from 'modules/auth/screen/SignIn';
 
 export type AuthStackPArams = {
-  login: undefined;
+  signin: undefined;
 };
 const { Navigator, Screen } = createStackNavigator<AuthStackPArams>();
 
-export const AuthStackLogin: React.FC = () => {
+export const AuthStackSignIn: React.FC = () => {
   return (
     <NavigationContainer>
       <Navigator
@@ -17,10 +17,10 @@ export const AuthStackLogin: React.FC = () => {
           headerShown: false,
         }}
       >
-        <Screen name='login' component={Login} />
+        <Screen name='signin' component={SignIn} />
       </Navigator>
     </NavigationContainer>
   );
 };
 
-export default AuthStackLogin;
+export default AuthStackSignIn;
