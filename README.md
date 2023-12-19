@@ -10,11 +10,11 @@ The React Native Template is a pre-configured structure designed for quickly sta
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [React Hook Form](https://react-hook-form.com/get-started)
+- [Reactotron](https://github.com/infinitered/reactotron) - **(Debugger)**
 
 ### Getting started
 
 ```bash
-
 # Cloning repository
 git clone git@github.com:bitwise-technology/frontend-reactnative.git
 
@@ -44,6 +44,7 @@ The project is structured to enhance maintainability and scalability. Below is a
   - **`shared`**: Contains shared components, utilities, and services that can be reused across different modules.
 
 This streamlined structure aims to facilitate development by making it easy to locate and manage different aspects of the application. Adjust and expand this structure as needed for your project.
+
 
 
 
