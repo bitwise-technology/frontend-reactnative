@@ -4,6 +4,8 @@ import Button from 'shared/components/Button';
 import { Flex, HStack, VStack } from 'react-native-flex-layout';
 import { useForm, Controller } from 'react-hook-form';
 import { Input } from 'shared/components/TextInput';
+import SocialLoginButton from '../components/SocialLoginButton';
+import { AntDesign, FontAwesome } from '@expo/vector-icons';
 
 interface LoginForm {
   email: string;
@@ -89,6 +91,13 @@ const SignIn: React.FC = () => {
 
           <Flex w={'100%'} p={24}>
             <Button onPress={handleSubmit(onSubmit)} title='Login' variant='contained' disabled={!isValid} />
+          </Flex>
+          <Flex>
+            <HStack>
+              <SocialLoginButton onPress={() => {}} icon={<AntDesign name='google' size={30} color='black' />} />
+              <SocialLoginButton onPress={() => {}} icon={<FontAwesome name='facebook-f' size={30} color='black' />} />
+              <SocialLoginButton onPress={() => {}} icon={<AntDesign name='apple1' size={30} color='black' />} />
+            </HStack>
           </Flex>
         </VStack>
       </KeyboardAvoidingView>
