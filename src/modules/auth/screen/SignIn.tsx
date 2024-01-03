@@ -1,18 +1,30 @@
 import React from 'react';
-import { Keyboard, KeyboardAvoidingView, Platform, Text, TouchableWithoutFeedback, View } from 'react-native';
+import {
+  Keyboard,
+  KeyboardAvoidingView,
+  Platform,
+  Text,
+  TouchableOpacity,
+  TouchableWithoutFeedback,
+  View,
+} from 'react-native';
 import Button from 'shared/components/Button';
 import { Flex, HStack, VStack } from 'react-native-flex-layout';
 import { useForm, Controller } from 'react-hook-form';
 import { Input } from 'shared/components/TextInput';
 import SocialLoginButton from '../components/SocialLoginButton';
 import { AntDesign, FontAwesome } from '@expo/vector-icons';
+import { useNavigation, NavigationProp } from '@react-navigation/native';
 
 interface LoginForm {
   email: string;
   password: string;
 }
+interface SignInProps {
+  navigation: NavigationProp<any>;
+}
 
-const SignIn: React.FC = () => {
+export const SignIn: React.FC<SignInProps> = ({ navigation }) => {
   const {
     control,
     handleSubmit,
@@ -21,6 +33,10 @@ const SignIn: React.FC = () => {
 
   const onSubmit = (data: LoginForm) => {
     console.log('Login pressed with email:', data.email, 'and password:', data.password);
+  };
+
+  const handleSignUpPress = () => {
+    navigation.navigate('signup');
   };
 
   return (
@@ -97,6 +113,14 @@ const SignIn: React.FC = () => {
               <SocialLoginButton onPress={() => {}} icon={<AntDesign name='google' size={30} color='black' />} />
               <SocialLoginButton onPress={() => {}} icon={<FontAwesome name='facebook-f' size={30} color='black' />} />
               <SocialLoginButton onPress={() => {}} icon={<AntDesign name='apple1' size={30} color='black' />} />
+            </HStack>
+          </Flex>
+          <Flex mt={12}>
+            <HStack>
+              <Text>Não tem uma conta? </Text>
+              <TouchableOpacity onPress={handleSignUpPress}>
+                <Text style={{ color: 'black', fontWeight: '600' }}>Cadastre-se</Text>
+              </TouchableOpacity>
             </HStack>
           </Flex>
         </VStack>
