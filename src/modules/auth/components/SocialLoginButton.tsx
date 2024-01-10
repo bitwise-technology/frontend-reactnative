@@ -1,5 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, StyleSheet, Text } from 'react-native';
+import { ColorsApp } from 'shared/colors';
 
 interface SocialLoginButtonProps {
   onPress: () => void;
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
   },
   label: {
     marginLeft: 10,
-    color: 'white',
+    color: ColorsApp.white,
     fontSize: 16,
     fontWeight: 'bold',
   },

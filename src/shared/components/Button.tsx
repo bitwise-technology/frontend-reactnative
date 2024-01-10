@@ -1,6 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, Text, ViewStyle, TextStyle } from 'react-native';
 import { Flex } from 'react-native-flex-layout';
+import { ColorsApp } from 'shared/colors';
 
 interface ButtonProps {
   onPress: () => void;
@@ -24,18 +25,18 @@ export const Button: React.FC<ButtonProps> = ({
       case 'outlined':
         return {
           borderWidth: 1,
-          borderColor: disabled ? '#ccc' : '#d84343',
+          borderColor: disabled ? ColorsApp.gray6 : ColorsApp.primary500,
           borderRadius: 8,
         };
       case 'contained':
         return {
-          backgroundColor: disabled ? '#ccc' : '#d84343',
+          backgroundColor: disabled ? ColorsApp.gray6 : ColorsApp.primary500,
           borderRadius: 8,
         };
 
       default:
         return {
-          backgroundColor: disabled ? '#ccc' : '#502a2a',
+          backgroundColor: disabled ? ColorsApp.gray6 : ColorsApp.primary500,
           borderRadius: 8,
         };
     }

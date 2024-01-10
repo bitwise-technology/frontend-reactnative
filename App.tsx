@@ -5,6 +5,7 @@ import AuthStackLogin from './src/router/AuthSignIn.router';
 import { StyleSheet, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import reactotron from './src/reactotron';
+import { ColorsApp } from 'shared/colors';
 if (__DEV__) reactotron.connect();
 
 export default function App() {
@@ -18,6 +19,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: ColorsApp.white,
   },
 });

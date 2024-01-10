@@ -15,6 +15,7 @@ import { Input } from 'shared/components/TextInput';
 import SocialLoginButton from '../components/SocialLoginButton';
 import { AntDesign, FontAwesome } from '@expo/vector-icons';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
+import { ColorsApp } from 'shared/colors';
 
 interface LoginForm {
   email: string;
@@ -46,7 +47,7 @@ export const SignIn: React.FC<SignInProps> = ({ navigation }) => {
         enabled={Platform.OS === 'ios'}
         style={{ flex: 1 }}
       >
-        <VStack bg='white' fill center>
+        <VStack bg={ColorsApp.white} fill center>
           <Flex mt={20}>
             <HStack p={24}>
               <Text style={{ fontSize: 24 }}>Login</Text>
@@ -65,7 +66,7 @@ export const SignIn: React.FC<SignInProps> = ({ navigation }) => {
                     value={value}
                     aria-label='Campo de e-mail'
                   />
-                  <Text style={{ color: 'red' }}>{errors.email?.message}</Text>
+                  <Text style={{ color: ColorsApp.red9 }}>{errors.email?.message}</Text>
                 </View>
               )}
               name='email'
@@ -93,7 +94,7 @@ export const SignIn: React.FC<SignInProps> = ({ navigation }) => {
                     value={value}
                     aria-label='Campo de senha'
                   />
-                  <Text style={{ color: 'red' }}>{errors.password?.message}</Text>
+                  <Text style={{ color: ColorsApp.red9  }}>{errors.password?.message}</Text>
                 </View>
               )}
               name='password'

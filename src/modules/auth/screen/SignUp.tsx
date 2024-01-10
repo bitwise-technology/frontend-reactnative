@@ -5,6 +5,7 @@ import Button from 'shared/components/Button';
 
 import { Flex, HStack, VStack } from 'react-native-flex-layout';
 import { Input } from 'shared/components/TextInput';
+import { ColorsApp } from 'shared/colors';
 
 interface FormData {
   name: string;
@@ -54,7 +55,7 @@ export const SignUp: React.FC = () => {
                   placeholder='Name'
                   value={field.value}
                 />
-                <Text style={{ color: 'red' }}>{errors.name?.message}</Text>
+                <Text style={{ color: ColorsApp.red9 }}>{errors.name?.message}</Text>
               </>
             )}
             name='name'
@@ -82,7 +83,7 @@ export const SignUp: React.FC = () => {
                   placeholder='Username'
                   value={field.value}
                 />
-                <Text style={{ color: 'red' }}>{errors.username?.message}</Text>
+                <Text style={{ color: ColorsApp.red9 }}>{errors.username?.message}</Text>
               </>
             )}
             name='username'
@@ -110,7 +111,7 @@ export const SignUp: React.FC = () => {
                   placeholder='E-mail'
                   value={field.value}
                 />
-                <Text style={{ color: 'red' }}>{errors.email?.message}</Text>
+                <Text style={{ color: ColorsApp.red9 }}>{errors.email?.message}</Text>
               </>
             )}
             name='email'
